@@ -1,0 +1,258 @@
+$kleur-header: #2e3837;
+$kleur-blauw: #166678;
+$kleur-black: #222222;
+$kleur-lightblauw: #7db9b3;
+$kleur-bijnawhite: #e1f6f4; // ( meer blauw? )
+$margin-left: 48px;
+$width-left-col: 29%;
+$width-right-col: 49%;
+$border: 1px solid $kleur-lightblauw;
+$font-light: 'Montserrat Light', monospace;
+
+@import "devicons";
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(http://allfont.net/allfont.css?fonts=montserrat-light);
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.resume{
+  width: 682px;
+  height: 957px;
+  background: $kleur-bijnawhite;
+  margin: 0 auto;
+  font-family: 'Montserrat', monospace;
+}
+.header{
+  height: 191px;
+  background: $kleur-header;
+  color: #fff;
+  font-family: $font-light;
+    .name{
+      position: relative;
+      top: 48px;
+      margin: 0 auto;
+      width: 50%;
+      h2{
+        font-size: 28px;
+        font-weight: lighter;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        line-height: 33.6px;
+        text-align: center;
+        border: 2px solid #166778;
+        padding: 6px;
+        margin: 0;
+      }
+    }
+    .name-job{
+      position: relative;
+      top: 40px;
+      h3{
+        font-size: 14px;
+        font-weight: lighter;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        text-align: center;
+      }
+    }
+    .header-information{
+      font-size: 11px;
+      position: relative;
+      top: 35px;
+      text-align: center;
+      span:not(:first-child):before{
+        content: '|';
+        margin: 0 10px;
+      }
+    }
+}
+
+.title-header{
+  font-family: $font-light;
+  text-transform: uppercase;
+  color: $kleur-black;
+
+  padding-bottom: 15px;
+  border-bottom: 2px solid #2e3837;
+  position: relative;
+  span.plus{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-weight: 400;
+  }
+  h2{
+    padding: 0;
+    margin: 0;
+    font-weight: lighter;
+  }
+}
+.content-data{
+  margin-top: 11px;
+  font-size: 12px;
+  .q{
+    width: 90px;
+  }
+  .a{
+    font-family: $font-light;
+    font-weight: lighter;
+  }
+  tr{
+    height: 20px;
+  }
+}
+
+.col-left{
+  width: $width-left-col;
+  float: left;
+  margin-top: 51px;
+  margin-left: $margin-left;
+  .about-me{
+    width: 100%;
+    //height: 112px;
+    //border: $border;
+  }
+
+  .my-skills{
+    width: 100%;
+    //height: 183px;
+    //border: $border;
+    margin-top: 30px;
+    .skills-content {
+      .q{
+        width: 67px;
+      }
+      .bar {
+        width: 10px;
+        height: 7px;
+        background: #bbbbbb;
+        float:left;
+        margin-right: 2px;
+      }
+      .active{
+        background: $kleur-header;
+      }
+    }
+  }
+
+  .languages{
+    width: 100%;
+    //height: 108px;
+    margin-top: 30px;
+    .skills-content {
+      .q{
+        width: 67px;
+      }
+      .bar {
+        width: 10px;
+        height: 7px;
+        background: #bbbbbb;
+        float:left;
+        margin-right: 2px;
+      }
+      .active{
+        background: $kleur-header;
+      }
+    }
+  }
+  .reference{
+    width: 100%;
+    margin-top: 30px;
+    .content-data{
+      p{
+        padding: 0;
+        margin: 0;
+        height:15px;
+      }
+    }
+  }
+  table{
+    width: 100%;
+    tbody{
+      width: 100%;
+    }
+    tr{
+      width: 100%;
+    }
+  }
+}
+
+.streep{
+  height: 75%;
+  width: 1px;
+  background: $kleur-black;
+  float: left;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 25px;
+}
+
+.col-right{
+  width: $width-right-col;
+  float: left;
+  margin-top: 51px;
+
+  .work-experiences{
+    width: 100%;
+    //height: 290px;
+    //border: $border;
+    .work-content{
+      .work-pb{
+        padding-bottom: 25px;
+      }
+      .work-name{
+        font-weight: bold;
+        width: 140px;
+      }
+      .work-description, .work-year, .work-full-name {
+        font-family: $font-light;
+        font-weight: lighter;
+      }
+      .work-full-name{
+        font-style: italic;
+        font-size: 10px;
+        padding-bottom: 4px;
+      }
+      .ver-top{
+        display: inline-block;
+        vertical-align: top;
+      }
+
+    }
+  }
+  .more-skills{
+    width: 100%;
+    margin-top: 22px;
+    overflow: auto;
+    .more-skills-icons{
+      text-align: center;
+      color: #2e3837;
+      .devicons{
+        font-size: 38px;
+      }
+    }
+  }
+  .interests{
+    width: 100%;
+
+    margin-top: 42px;
+    .interests-icons{
+      text-align: center;
+      color: #2e3837;
+      .fa{
+        font-size: 33px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .w3{
+    width: 25%;
+    float: left;
+  }
+
+}
+
