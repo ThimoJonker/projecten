@@ -1,2 +1,2 @@
-# Resume Project - CV nagemaakt
-d
+# Resume Project 
+CV nagemaakt in HTML.
